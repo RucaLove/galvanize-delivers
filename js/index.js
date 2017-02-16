@@ -10,8 +10,8 @@
           var inputPrice = '$8.99';
           console.log(inputVal);
           console.log($('tr'));
-          $('tr')[1].append(inputVal);
-          $('tr')[2].append(inputPrice);
+          $('td')[0].append(inputVal);
+          // $('tr')[1].append(inputPrice);
         })
 
         $('#pie').click(function(){
@@ -20,8 +20,8 @@
           var inputPrice = '11.99';
           console.log(inputVal);
           console.log($('tr'));
-          $('tr')[1].append(inputVal);
-          $('tr')[2].append(inputPrice);
+          $('td')[1].append(inputVal);
+          // $('tr')[1].append(inputPrice);
         })
 
 
