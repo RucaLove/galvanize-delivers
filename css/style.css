@@ -7,10 +7,13 @@
 
 #index-banner {
   background-image: url("../img/hero.jpg");
+  text-align: left;
 }
 
 .tables {
   text-align: left;
 }
 
-.row_
+/*.input-field_col_s6_m6 {
+  align-content: center;
+}*/
