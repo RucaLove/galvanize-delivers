@@ -6,18 +6,23 @@
 
         $('#burger').click(function(){
           console.log('burger clicks');
-          var inputVal = 'test';
+          var inputVal = 'Royale with Cheese';
+          var inputPrice = '$8.99';
           console.log(inputVal);
           console.log($('tr'));
-          $('tr')[1].append($('HELP'));
+          $('tr')[1].append(inputVal);
+          $('tr')[2].append(inputPrice);
         })
 
-        // $('#burger').click(function(){
-        //   console.log('burger clicks');
-        //   var inputVal = 'test';
-        //   console.log(inputVal);
-        //   $('tr').append('<td id="burger">' + inputVal +'</td>');
-        // })
+        $('#pie').click(function(){
+          console.log('pie clicks');
+          var inputVal = 'Arugula Pie';
+          var inputPrice = '11.99';
+          console.log(inputVal);
+          console.log($('tr'));
+          $('tr')[1].append(inputVal);
+          $('tr')[2].append(inputPrice);
+        })
 
 
   }); // end of document ready
