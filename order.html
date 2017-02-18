@@ -4,10 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <script
-      src="http://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <title>Starter Template - Materialize</title>
 
@@ -33,17 +30,10 @@
     </nav>
 
     <div class="container">
-      <div class="row">
-      <div class="col s6 m6">
-        <h5 class="left">Menu</h5>
-      </div>
-      <div class="col s6 m6">
-        <h5 class="left">Order</h5>
-      </div>
-      </div>
-        <div class="section">
-            <!-- <div class="tables"> -->
-
+        <div class="column">
+            <div class="row">
+                <h5 class="left">Menu</h5>
+            </div>
             <div class="row">
                 <div class="col s6 m3">
                     <div class="card">
@@ -51,46 +41,23 @@
                             <img class="activator" src="/img/burger.jpg" alt="Burger">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4"><h6>Royale with Cheese</h6><h6>$8.99</h6></span>
+                            <span class="card-title activator grey-text text-darken-4"><h6 class="burger">Royale with Cheese</h6><h6 class="burgerPrice">$8.99</h6></span>
                             <p><button type="button" id="burger">ADD TO ORDER</button></p>
                         </div>
                     </div>
                 </div>
-
                 <div class="col s6 m3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="/img/pizza.jpg" alt="Pizza">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4"><h6>Arugula Pie</h6><h6>$11.99</h6></span>
+                            <span class="card-title activator grey-text text-darken-4"><h6 class="pizza">Arugula Pie</h6><h6 class="pizzaPrice">$11.99</h6></span>
                             <p><button type="button" id="pie">ADD TO ORDER</button></p>
                         </div>
                     </div>
                 </div>
-                <div class="col s6 m6 l6">
-                    <table class ="striped">
-                        <thead>
-                          <tr>
-                            <th>Item</th>
-                            <th>Price</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                </div>
             </div>
-
-
-
             <div class="row">
                 <div class="col s6 m3">
                     <div class="card">
@@ -98,93 +65,78 @@
                             <img class="activator" src="/img/ribs.jpg" alt="Smoked Swine">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4"><h6>Smoked Swine</h6><h6>$14.99</h6></span>
+                            <span class="card-title activator grey-text text-darken-4"><h6 class="swine">Smoked Swine</h6><h6 class="swinePrice">$14.99</h6></span>
                             <p><button type="button" id="swine">ADD TO ORDER</button></p>
                         </div>
                     </div>
                 </div>
-
                 <div class="col s6 m3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="/img/ice_cream.jpg" alt="Ice Cream">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4"><h6>Ice Cream Biscut</h6><h6>$7.99</h6></span>
+                            <span class="card-title activator grey-text text-darken-4"><h6 class="icecream">Ice Cream Biscut</h6><h6 class="icecreamPrice">$7.99</h6></span>
                             <p><button type="button" id="icecream">ADD TO ORDER</button></p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                <form class="col s6 m6">
+            </div>
+        </div>
+    </div>
 
-                    <div class="row">
-                        <div class="input-field col s6 m12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">Name</label>
-                        </div>
-                        <div class="input-field col s6 m12">
-                            <i class="material-icons prefix">phone</i>
-                            <input id="icon_telephone" type="tel" class="validate">
-                            <label for="icon_telephone">Telephone</label>
-                        </div>
-                        <div class="input-field col s6 m12">
-                            <i class="material-icons prefix">business</i>
-                            <input id="icon_business" type="text" class="validate">
-                            <label for="icon_business">Address</label>
-                        </div>
-                        <div class="input-field col s6 m12">
-                          <a href="order.html" id="download-button" class="btn-large waves-effect waves-light pink waves-center">PLACE AN ORDER</a>
-                        </div>
+    <div class="container">
+        <div class="col s12 m6 l6">
+            <div class="row">
+                <h5 class="left">Order</h5>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l6 striped">
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="price">Subtotal</td>
+                            </tr>
+                            <tr>
+                                <td class="price">Tax</td>
+                            </tr>
+                            <tr>
+                                <td class="price">Total</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <form class="col s12 m6 l6">
+                    <div class="input-field col s6 m12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Name</label>
+                    </div>
+                    <div class="input-field col s6 m12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+                    <div class="input-field col s6 m12">
+                        <i class="material-icons prefix">business</i>
+                        <input id="icon_business" type="text" class="validate">
+                        <label for="icon_business">Address</label>
+                    </div>
+                    <div class="input-field col s6 m12">
+                        <a href="order.html" id="download-button" class="btn-large waves-effect waves-light pink waves-center">PLACE AN ORDER</a>
                     </div>
                 </form>
-              </div>
             </div>
-
-            <!-- <div class="section">
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="icon-block">
-                            <h5 class="left">Order</h5><br>
-
-                            <TABLE>
-                                <TH>Item</TH>
-                                <TH>Price</TH>
-                                <TR>
-                                    <TD>Royale with Cheese</TD>
-                                    <TD>$8.99</TD>
-                                </TR>
-                                <TR>
-                                    <TD>Arugula Pie</TD>
-                                    <TD>$11.99</TD>
-                                </TR>
-                                <TR>
-                                    <TD>Smoked Swine</TD>
-                                    <TD>$14.99</TD>
-                                </TR>
-                                <TR>
-                                    <TD>Ice Cream Biscuit</TD>
-                                    <TD>$7.99</TD>
-                                </TR>
-                                <TR>
-                                    <TD>Subtotal</TD>
-                                    <TD>$</TD>
-                                </TR>
-                                <TR>
-                                    <TD>Tax</TD>
-                                    <TD>$</TD>
-                                </TR>
-                                <TR>
-                                    <TD>Total</TD>
-                                    <TD>$</TD>
-                                </TR>
-                            </TABLE>
-
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 

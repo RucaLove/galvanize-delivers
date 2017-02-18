@@ -1,3 +1,8 @@
+.wrapper {
+  width: 980px;
+  margin: auto;
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -13,6 +18,17 @@
 .tables {
   text-align: left;
 }
+
+#burger, #pie, #swine, #icecream {
+  background-color: yellow;
+  border-radius: 50px;
+}
+
+.price {
+  text-align: center;;
+}
+
+.one_half { width:460px; }
 
 /*.input-field_col_s6_m6 {
   align-content: center;

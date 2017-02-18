@@ -1,27 +1,55 @@
 (function($){
   $(function(){
-    console.log("here");
+    // console.log("here");
 
     //$('.button-collapse').sideNav();
 
         $('#burger').click(function(){
-          console.log('burger clicks');
-          var inputVal = 'Royale with Cheese';
-          var inputPrice = '$8.99';
-          console.log(inputVal);
-          console.log($('tr'));
-          $('td')[0].append(inputVal);
-          // $('tr')[1].append(inputPrice);
+          let tr = $('<tr>');
+          $('tbody').append(tr);
+          let td = $('<td>');
+          let td2 = $('<td>');
+          tr.append(td, td2);
+          let inputVal = $('.burger').text();
+          let inputPrice = $('.burgerPrice').text();
+          $(td).append(inputVal);
+          $(td2).append(inputPrice);
         })
 
-        $('#pie').click(function(){
-          console.log('pie clicks');
-          var inputVal = 'Arugula Pie';
-          var inputPrice = '11.99';
-          console.log(inputVal);
-          console.log($('tr'));
-          $('td')[1].append(inputVal);
-          // $('tr')[1].append(inputPrice);
+          $('#pie').click(function(){
+          let tr = $('<tr>');
+          $('tbody').append(tr);
+          let td = $('<td>');
+          let td2 = $('<td>');
+          tr.append(td, td2);
+          let inputVal = $('.pizza').text();
+          let inputPrice = $('.pizzaPrice').text();
+          $(td).append(inputVal);
+          $(td2).append(inputPrice);
+        })
+
+        $('#swine').click(function(){
+          let tr = $('<tr>');
+          $('tbody').append(tr);
+          let td = $('<td>');
+          let td2 = $('<td>');
+          tr.append(td, td2);
+          let inputVal = $('.swine').text();
+          let inputPrice = $('.swinePrice').text();
+          $(td).append(inputVal);
+          $(td2).append(inputPrice);
+        })
+
+        $('#icecream').click(function(){
+          let tr = $('<tr>');
+          $('tbody').append(tr);
+          let td = $('<td>');
+          let td2 = $('<td>');
+          tr.append(td, td2);
+          let inputVal = $('.icecream').text();
+          let inputPrice = $('.icecreamPrice').text();
+          $(td).append(inputVal);
+          $(td2).append(inputPrice);
         })
 
 
