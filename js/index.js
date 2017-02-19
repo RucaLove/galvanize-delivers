@@ -26,9 +26,10 @@
       $(td3).append(itemQuantity);
 
       $('.sub').text('$' + subTotal().toFixed(2));
-      let tax = (subTotal()* 0.08995).toFixed(2);
-      $('.taxed').text('$' + (subTotal() * 0.08995).toFixed(2));
-      $('.totaled').text('$' + (subTotal() + (0.08995 * subTotal())).toFixed(2));
+      // let tax = (Number($('.sub').text()) * Number(.08995));
+      //       console.log($('.sub').text());
+      let tax = $('.taxed').text('$' + ($('.sub').text().slice(1) * 0.08995).toFixed(2));
+      $('.totaled').text('$' + (+$('.sub').text().slice(1) + +(tax.text().slice(1))));
       // let buttons = $('.clicky');
 
     })
