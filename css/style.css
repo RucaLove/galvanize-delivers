@@ -1,34 +1,65 @@
 .wrapper {
   width: 980px;
   margin: auto;
+  font-family: 'Delius Unicase', cursive;
+}
+
+.nav-wrapper {
+  font-family: 'Delius Unicase', cursive;
 }
 
 .icon-block {
   padding: 0 15px;
+  font-family: 'Delius Unicase', cursive;
 }
 .icon-block .material-icons {
 	font-size: inherit;
 }
 
 #index-banner {
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/dining.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: left;
+  font-family: 'Delius Unicase', cursive;
 }
 
 .tables {
   text-align: left;
+  font-family: 'Delius Unicase', cursive;
 }
 
 #burger, #pie, #swine, #icecream {
   background-color: yellow;
   border-radius: 50px;
+  font-family: 'Delius Unicase', cursive;
 }
 
 .price {
   text-align: center;;
+  font-family: 'Delius Unicase', cursive;
 }
 
-.one_half { width:460px; }
+.striped {
+  font-size: 12px;
+  font-family: 'Delius Unicase', cursive;
+}
+
+.confirmation {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Delius Unicase', cursive;
+}
+
+.row {
+  font-family: 'Delius Unicase', cursive;
+}
+
+.page-footer {
+  font-family: 'Delius Unicase', cursive;
+}
+/*.one_half { width:460px; }*/
+
 
 /*.input-field_col_s6_m6 {
   align-content: center;
