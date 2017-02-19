@@ -30,7 +30,7 @@
 }
 
 #burger, #pie, #swine, #icecream {
-  background-color: yellow;
+  background-color: dark-purple;
   border-radius: 50px;
   font-family: 'Delius Unicase', cursive;
 }
@@ -58,7 +58,10 @@
 .page-footer {
   font-family: 'Delius Unicase', cursive;
 }
-/*.one_half { width:460px; }*/
+
+.row {
+  background-color: dark-purple;
+}
 
 
 /*.input-field_col_s6_m6 {

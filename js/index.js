@@ -29,7 +29,7 @@
       // let tax = (Number($('.sub').text()) * Number(.08995));
       //       console.log($('.sub').text());
       let tax = $('.taxed').text('$' + ($('.sub').text().slice(1) * 0.08995).toFixed(2));
-      $('.totaled').text('$' + (+$('.sub').text().slice(1) + +(tax.text().slice(1))));
+      $('.totaled').text('$' + (+$('.sub').text().slice(1) + +(tax.text().slice(1))).toFixed(2));
       // let buttons = $('.clicky');
 
     })
