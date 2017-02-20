@@ -16,7 +16,7 @@
       let td = $('<td></td>');
       let td2 = $('<td></td>');
       let td3 = $('<td></td>');
-      tr.append(td, td2, td3);
+      tr.append(td, td2);
 
       let itemValue = $(event.target).parent('p').siblings('span').children('h6:first-child').text();
       let itemPrice = $(event.target).parent('p').siblings('span').children('h6:last-child').text();
