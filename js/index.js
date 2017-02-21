@@ -5,12 +5,12 @@
     let allPrices = 0;
     function subTotal() {
       let itemSub = Number($(event.target).parent('p').siblings('span').children('h6:last-child').text().replace(/[^0-9\.]+/g, ""));
-      var dollars = allPrices += itemSub;
+      let dollars = allPrices += itemSub;
+
       return dollars;
     }
 
     $(this).on('click', '.clicky', function() {
-
       let tr = $('<tr></tr>');
       $('tbody').append(tr);
       let td = $('<td></td>');
@@ -26,12 +26,8 @@
       $(td3).append(itemQuantity);
 
       $('.sub').text('$' + subTotal().toFixed(2));
-      // let tax = (Number($('.sub').text()) * Number(.08995));
-      //       console.log($('.sub').text());
       let tax = $('.taxed').text('$' + ($('.sub').text().slice(1) * 0.08995).toFixed(2));
-      $('.totaled').text('$' + (+$('.sub').text().slice(1) + +(tax.text().slice(1))).toFixed(2));
-      // let buttons = $('.clicky');
-
+      $('.totaled').text('$' + (+$('.sub').text().slice(1) + Number(tax.text().slice(1))).toFixed(2));
     })
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  });
+})(jQuery);
